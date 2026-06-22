@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="galereya/Logo/logoicon3.png">
+    <link rel="stylesheet" href="contacts.css">
+    <title>Пространство красоты | Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <div class="logo">Пространство красоты</div>
+                </div>
+                
+                <button class="mobile-menu-btn">☰</button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="masters.html">Мастера</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                        <li><a href="#appointment" class="nav-btn">Записаться</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами любым удобным способом</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h2 class="section-title">Контактная информация</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-details">
+                            <h3>Адрес салона</h3>
+                            <p>г. Волгоград, ул. Качинцев, 112</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-details">
+                            <h3>Телефоны</h3>
+                            <p><a href="tel:+78442487181">+7 (8442) 48-71-81</a></p>
+                            <p><a href="tel:+79054330388">+7 (905) 433-03-88</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-details">
+                            <h3>Часы работы</h3>
+                            <p>Пн-Сб: 08:00-19:00</p>
+                            <p>Вс: 09:00-19:00</p>
+                            <p>Последняя запись за час до закрытия</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-card">
+                    <h2 class="section-title">Напишите нам</h2>
+                    <p style="color: #666; margin-bottom: 30px;">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" style="color: #333; font-weight:500;">Имя *</label>
+                                <input type="text" id="name" placeholder="Ваше имя" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" style="color: #333; font-weight:500;">Телефон *</label>
+                                <input type="tel" id="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" style="color: #333; font-weight:500;">Email</label>
+                            <input type="email" id="email" placeholder="your@email.ru">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" style="color: #333; font-weight:500;">Тема обращения</label>
+                            <select id="subject">
+                                <option value="question">Вопрос по услугам</option>
+                                <option value="appointment">Запись на стрижку</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="feedback">Отзыв о работе</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" style="color: #333; font-weight:500;">Сообщение *</label>
+                            <textarea id="message" rows="5" placeholder="Напишите ваш вопрос или пожелание..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; width: 100%;">Как нас найти</h2>
+            
+            <div class="map-container">
+                <div class="map-placeholder" style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/org/yuliya/1116635420/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Пространство красоты</a>
+                    <a href="https://yandex.ru/maps/38/volgograd/category/hairdresser/184105812/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Парикмахерская в Волгограде</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=44.501201%2C48.737961&mode=poi&poi%5Bpoint%5D=44.501423%2C48.737924&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1116635420&utm_content=logo&utm_medium=reviews&utm_source=maps-reviews-widget&z=19.3" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://yandex.ru/maps/38/volgograd/?ll=44.501201%2C48.737961&mode=routes&rtext=~48.737924%2C44.501423&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1116635420&utm_content=logo&utm_medium=reviews&utm_source=maps-reviews-widget&z=19.3" class="btn" style="width: auto; padding: 12px 30px;">Проложить маршрут</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; width: 100%;">График работы мастеров</h2>
+            
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <h3>Женский зал</h3>
+                    <p class="highlight">Понедельник-Суббота: 08:00 - 19:00</p>
+                    <p class="highlight">Воскресенье: 09:00 - 19:00</p>
+                    <p>Мастера: Анна, Екатерина, Ольга, Марина</p>
+                    <p style="color: #d4a574; margin-top: 10px;">Запись за 2-3 дня</p>
+                </div>
+                
+                <div class="schedule-item">
+                    <h3>Мужской зал</h3>
+                    <p class="highlight">Понедельник-Суббота: 08:00 - 19:00</p>
+                    <p class="highlight">Воскресенье: 09:00 - 19:00</p>
+                    <p>Мастера: Дмитрий, Сергей</p>
+                    <p style="color: #d4a574; margin-top: 10px;">Возможна запись в день обращения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="footer-text">© 2026 Салон красоты «Пространство красоты». Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav ul');
+            
+            if (mobileMenuBtn && nav) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+                });
+            }
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768 && nav) {
+                        nav.style.display = 'none';
+                    }
+                });
+            });
+            
+            window.addEventListener('resize', function() {
+                if (nav) {
+                    if (window.innerWidth > 768) {
+                        nav.style.display = 'flex';
+                    } else {
+                        nav.style.display = 'none';
+                    }
+                }
+            });
+            
+            if (nav && window.innerWidth <= 768) {
+                nav.style.display = 'none';
+            }
+            
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Спасибо за обращение! Мы ответим вам в ближайшее время.');
+                    this.reset();
+                });
+            }
+            
+            const modalHTML = `
+            <div id="simpleAppointmentModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center;">
+                <div style="background:#fff;padding:30px;border-radius:15px;max-width:400px;width:90%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+                    <button id="simpleModalClose" style="position:absolute;top:10px;right:15px;background:none;color:#d4a574;border:none;font-size:28px;cursor:pointer;">×</button>
+                    <h3 style="color:#d4a574; text-align: center; font-size:24px; margin-bottom:20px;">Записаться</h3>
+                    <form id="simpleAppointmentForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Ваш телефон" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <select required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="woman">Женская стрижка</option>
+                                <option value="man">Мужская стрижка</option>
+                                <option value="child">Детская стрижка</option>
+                                <option value="color">Окрашивание</option>
+                                <option value="care">Уход за волосами</option>
+                                <option value="style">Укладка</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="modalMaster" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                                <option value="" disabled selected>Выберите мастера</option>
+                                <option value="Екатерина Волкова">Екатерина Волкова - Стилист-колорист</option>
+                                <option value="Анна Морозова">Анна Морозова - Мастер по укладкам</option>
+                                <option value="Дмитрий Кузнецов">Дмитрий Кузнецов - Барбер-стилист</option>
+                                <option value="Ольга Смирнова">Ольга Смирнова - Детский парикмахер</option>
+                                <option value="Марина Соколова">Марина Соколова - Технолог по уходу</option>
+                                <option value="Сергей Новиков">Сергей Новиков - Универсальный стилист</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="3" placeholder="Ваши пожелания (необязательно)" style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;resize:vertical;"></textarea>
+                        </div>
+                        <button type="submit" style="background:#d4a574;color:white;border:none;padding:14px;width:100%;border-radius:8px;margin-top:10px;cursor:pointer;font-size:18px;font-weight:bold;transition:background 0.3s;">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            
+            const modal = document.getElementById('simpleAppointmentModal');
+            const closeBtn = document.getElementById('simpleModalClose');
+            const form = document.getElementById('simpleAppointmentForm');
+            
+            function openModal() {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+            
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+            if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+            if (form) form.addEventListener('submit', function(e) { e.preventDefault(); alert('Спасибо за заявку! Мы свяжемся с вами.'); closeModal(); this.reset(); });
+            
+            document.querySelectorAll('a[href="#appointment"], .nav-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) { e.preventDefault(); openModal(); });
+            });
+        });
+    </script>
+</body>
+</html>

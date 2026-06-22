@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="galereya/Logo/logoicon3.png">
+    <link rel="stylesheet" href="masters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Пространство красоты | Мастера</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <div class="logo">Пространство красоты</div>
+                </div>
+                
+                <button class="mobile-menu-btn">☰</button>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="masters.html" class="active">Мастера</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#appointment" class="nav-btn">Записаться</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наши мастера</h1>
+            <p>Профессионалы с большим опытом и любовью к своему делу</p>
+        </div>
+    </section>
+
+    <section class="masters-section">
+        <div class="container">
+            <h2 class="section-title">Команда профессионалов</h2>
+            
+            <div class="masters-grid">
+                <div class="master-card">
+                    <img src="galereya/Masters/EkaterinaVolkova.png" alt="Екатерина" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Мария Широкова</h3>
+                        <div class="master-position">Стилист-колорист</div>
+                        <p class="master-desc">Профессиональный стилист с 8-летним опытом. Специализируется на женских стрижках и окрашивании.</p>
+                        <div class="master-services">
+                            <span class="service-tag">Женские стрижки</span>
+                            <span class="service-tag">Окрашивание</span>
+                            <span class="service-tag">Тонирование</span>
+                            <span class="service-tag">Сложное окрашивание</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Мария Широкова')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <img src="galereya/Masters/ElenaDanchenko.jpg" alt="Анна" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Елена Данченко</h3>
+                        <div class="master-position">Мастер по укладкам</div>
+                        <p class="master-desc">Эксперт в создании идеальных укладок и мелировании. Знает все секреты объёмных причёсок.</p>
+                        <div class="master-services">
+                            <span class="service-tag">Вечерние укладки</span>
+                            <span class="service-tag">Мелирование</span>
+                            <span class="service-tag">Свадебные причёски</span>
+                            <span class="service-tag">Укладка</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Елена Данченко')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <img src="galereya/Masters/VasiliyKertanov.jpg" alt="Дмитрий" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Василий Кертанов</h3>
+                        <div class="master-position">Барбер-стилист</div>
+                        <p class="master-desc">Мастер мужских стрижек с 6-летним стажем. Специализируется на классических и современных мужских причёсках.</p>
+                        <div class="master-services">
+                            <span class="service-tag">Мужские стрижки</span>
+                            <span class="service-tag">Моделирование бороды</span>
+                            <span class="service-tag">Стрижка машинкой</span>
+                            <span class="service-tag">Оформление усов</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Василий Кертанов')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <img src="galereya/Masters/TatyanaKyznecova.jpg" alt="Ольга" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Татьяна Кузнецова</h3>
+                        <div class="master-position">Мастер маникюра и педикюра</div>
+                        <p class="master-desc">Специалист по маникюру и педикюру. Находит подход к каждому клиенту, создаёт комфортную атмосферу.</p>
+                        <div class="master-services">
+                            <span class="service-tag">Педикюр</span>
+                            <span class="service-tag">Маникюр</span>
+                            <span class="service-tag">Обработка кутикул</span>
+                            <span class="service-tag">Нанесение покрытий</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Татьяна Кузнецова')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <img src="galereya/Masters/YlianaMaslova.jpg" alt="Марина" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Ульяна Маслова</h3>
+                        <div class="master-position">Технолог по уходу</div>
+                        <p class="master-desc">Эксперт по восстановлению волос. Проводит процедуры ламинирования и кератинового выпрямления.</p>
+                        <div class="master-services">
+                            <span class="service-tag">Ламинирование</span>
+                            <span class="service-tag">Кератиновое выпрямление</span>
+                            <span class="service-tag">Спа-уход</span>
+                            <span class="service-tag">Восстановление волос</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Ульяна Маслова')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="master-card">
+                    <img src="galereya/Masters/NikitaBragin.jpg" alt="Сергей" class="master-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80'">
+                    <div class="master-info">
+                        <h3 class="master-name">Никита Брагин</h3>
+                        <div class="master-position">Универсальный стилист</div>
+                        <p class="master-desc">Мастер широкого профиля. Выполняет как мужские, так и женские стрижки. Стаж работы: 4 года</p>
+                        <div class="master-services">
+                            <span class="service-tag">Женские стрижки</span>
+                            <span class="service-tag">Мужские стрижки</span>
+                            <span class="service-tag">Моделирование</span>
+                            <span class="service-tag">Творческие стрижки</span>
+                        </div>
+                        <div class="master-buttons">
+                            <button class="master-btn master-btn-outline" onclick="openWorksModal('Никита Брагин')">Примеры работ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-appointment">
+                <a href="#appointment" class="btn">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="worksModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeWorksModal()">&times;</span>
+            <div class="modal-body">
+                <h3 id="modalMasterName" style="color: #222; margin-bottom: 15px;"></h3>
+                <p id="modalMasterBio" style="color: #666; margin-bottom: 20px;"></p>
+                <h4 style="color: #d4a574; margin-bottom: 15px;">Примеры работ:</h4>
+                <div class="gallery-grid" id="worksGallery"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p class="footer-text">© 2026 Салон красоты «Пространство красоты». Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mastersData = {
+            'Мария Широкова': {
+                bio: 'Стилист-колорист с 8-летним опытом. Специализируется на женских стрижках и окрашивании.',
+                works: [
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okrasww',
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okraswww',
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okraswwww',
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okrasm',
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okrasmm',
+                    'galereya/PrimeriRabot/EkaterinaVolkova/okrasmmm'
+                ]
+            },
+            'Елена Данченко': {
+                bio: 'Эксперт в создании идеальных укладок и мелировании.',
+                works: [
+                    'galereya/PrimeriRabot/AnnaMorozova/melirovanie',
+                    'galereya/PrimeriRabot/AnnaMorozova/mmelirovanie',
+                    'galereya/PrimeriRabot/AnnaMorozova/mmmelirovanie',
+                    'galereya/PrimeriRabot/AnnaMorozova/ukladka',
+                    'galereya/PrimeriRabot/AnnaMorozova/ukladkaa',
+                    'galereya/PrimeriRabot/AnnaMorozova/ukladkaaa'
+                ]
+            },
+            'Василий Кертанов': {
+                bio: 'Мастер мужских стрижек с 6-летним стажем.',
+                works: [
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/boroda1',
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/boroda2',
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/boroda3',
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/mhair1',
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/mhair2',
+                    'galereya/PrimeriRabot/DmitriyKuznetsov/mhair3'
+                ]
+            },
+            'Татьяна Кузнецова': {
+                bio: 'Специалист по детским стрижкам. Находит подход к каждому ребёнку.',
+                works: [
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair1',
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair2',
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair3',
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair4',
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair5',
+                    'galereya/PrimeriRabot/OlgaSmirnova/childhair6'
+                ]
+            },
+            'Ульяна Маслова': {
+                bio: 'Эксперт по восстановлению и лечению волос.',
+                works: [
+                    'galereya/PrimeriRabot/MarinaSokolova/laminir1',
+                    'galereya/PrimeriRabot/MarinaSokolova/laminir2',
+                    'galereya/PrimeriRabot/MarinaSokolova/laminir3',
+                    'galereya/PrimeriRabot/MarinaSokolova/laminir4',
+                    'galereya/PrimeriRabot/MarinaSokolova/keratin1',
+                    'galereya/PrimeriRabot/MarinaSokolova/keratin2'
+                ]
+            },
+            'Никита Брагин': {
+                bio: 'Мастер широкого профиля. Выполняет как мужские, так и женские стрижки.',
+                works: [
+                    'galereya/PrimeriRabot/SergeyNovikov/whair1',
+                    'galereya/PrimeriRabot/SergeyNovikov/whair2',
+                    'galereya/PrimeriRabot/SergeyNovikov/mhair1',
+                    'galereya/PrimeriRabot/SergeyNovikov/mhair2',
+                    'galereya/PrimeriRabot/SergeyNovikov/mhair3',
+                    'galereya/PrimeriRabot/SergeyNovikov/mhair4'
+                ]
+            }
+        };
+
+        function openWorksModal(masterName) {
+            const master = mastersData[masterName];
+            if (master) {
+                document.getElementById('modalMasterName').textContent = masterName;
+                document.getElementById('modalMasterBio').textContent = master.bio;
+                
+                const gallery = document.getElementById('worksGallery');
+                gallery.innerHTML = '';
+                master.works.forEach(imgUrl => {
+                    const img = document.createElement('img');
+                    const tryExtensions = ['.png', '.jpg', '.jpeg', '.webp'];
+                    let currentTry = 0;
+                    
+                    function tryLoad() {
+                        img.src = imgUrl + tryExtensions[currentTry];
+                    }
+                    
+                    img.onerror = function() {
+                        currentTry++;
+                        if (currentTry < tryExtensions.length) {
+                            tryLoad();
+                        } else {
+                            this.src = 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400';
+                        }
+                    };
+                    
+                    img.className = 'gallery-img';
+                    img.alt = 'Пример работы';
+                    tryLoad();
+                    gallery.appendChild(img);
+                });
+                
+                document.getElementById('worksModal').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeWorksModal() {
+            document.getElementById('worksModal').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        function closeWorksModalOnOverlay(e) {
+            const modal = document.getElementById('worksModal');
+            if (e.target === modal) {
+                closeWorksModal();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalHTML = `
+            <div id="simpleAppointmentModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center;">
+                <div style="background:#fff;padding:30px;border-radius:15px;max-width:400px;width:90%;position:relative;box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+                    <button id="simpleModalClose" style="position:absolute;top:10px;right:15px;background:none;color:#d4a574;border:none;font-size:28px;cursor:pointer;">×</button>
+                    <h3 style="color:#b76e79; text-align: center; font-size:24px; margin-bottom:20px;">Записаться</h3>
+                    <form id="simpleAppointmentForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Ваш телефон" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <select required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="woman">Женская стрижка</option>
+                                <option value="man">Мужская стрижка</option>
+                                <option value="child">Педикюр и Маникюр</option>
+                                <option value="color">Окрашивание</option>
+                                <option value="care">Уход за волосами</option>
+                                <option value="style">Укладка</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="modalMaster" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                                <option value="" disabled selected>Выберите мастера</option>
+                                <option value="Екатерина Волкова">Мария Широкова - Стилист-колорист</option>
+                                <option value="Анна Морозова">Елена Данченко - Мастер по укладкам</option>
+                                <option value="Дмитрий Кузнецов">Василий Кертанов - Барбер-стилист</option>
+                                <option value="Ольга Смирнова">Татьяна Кузнецова - Детский парикмахер</option>
+                                <option value="Марина Соколова">Ульяна Маслова - Технолог по уходу</option>
+                                <option value="Сергей Новиков">Никита Брагин - Универсальный стилист</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" required style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="3" placeholder="Ваши пожелания (необязательно)" style="background:#fafafa;color:#333;border:1px solid #eee;padding:12px;width:100%;border-radius:8px;margin-top:5px;font-size:16px;resize:vertical;"></textarea>
+                        </div>
+                        <button type="submit" style="background:#b76e79;color:white;border:none;padding:14px;width:100%;border-radius:8px;margin-top:10px;cursor:pointer;font-size:18px;font-weight:bold;transition:background 0.3s;">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            
+            const modal = document.getElementById('simpleAppointmentModal');
+            const closeBtn = document.getElementById('simpleModalClose');
+            const form = document.getElementById('simpleAppointmentForm');
+            
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            document.getElementById('worksModal').addEventListener('click', closeWorksModalOnOverlay);
+            
+            if (closeBtn) closeBtn.addEventListener('click', closeModal);
+            if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+            if (form) form.addEventListener('submit', function(e) { e.preventDefault(); alert('Спасибо за заявку! Мы свяжемся с вами.'); closeModal(); this.reset(); });
+            
+            document.querySelectorAll('a[href="#appointment"], .nav-btn, .btn').forEach(btn => {
+                btn.addEventListener('click', function(e) { e.preventDefault(); if (modal) modal.style.display = 'flex'; document.body.style.overflow = 'hidden'; });
+            });
+            
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('nav ul');
+            
+            if (mobileMenuBtn && nav) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+                });
+            }
+            
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768 && nav) {
+                        nav.style.display = 'none';
+                    }
+                });
+            });
+            
+            window.addEventListener('resize', function() {
+                if (nav) {
+                    if (window.innerWidth > 768) {
+                        nav.style.display = 'flex';
+                    } else {
+                        nav.style.display = 'none';
+                    }
+                }
+            });
+            
+            if (nav && window.innerWidth <= 768) {
+                nav.style.display = 'none';
+            }
+        });
+
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function openLightbox(images, index) {
+            var oldLightbox = document.getElementById('myLightbox');
+            if (oldLightbox) {
+                document.body.removeChild(oldLightbox);
+            }
+            
+            currentImages = images;
+            currentIndex = index;
+            
+            var lightbox = document.createElement('div');
+            lightbox.id = 'myLightbox';
+            lightbox.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:99999;display:flex;align-items:center;justify-content:center;';
+            
+            var closeBtn = document.createElement('span');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.style.cssText = 'position:absolute;top:20px;right:35px;color:white;font-size:45px;cursor:pointer;z-index:100001;font-family:Arial;';
+            closeBtn.onclick = function(e) {
+                e.stopPropagation();
+                var lb = document.getElementById('myLightbox');
+                if (lb) document.body.removeChild(lb);
+            };
+            
+            var prevBtn = document.createElement('span');
+            prevBtn.innerHTML = '&#10094;';
+            prevBtn.style.cssText = 'position:absolute;left:20px;top:50%;transform:translateY(-50%);color:white;font-size:50px;cursor:pointer;z-index:100001;user-select:none;';
+            prevBtn.onclick = function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                var img = lightbox.querySelector('.lightbox-img');
+                if (img) img.src = currentImages[currentIndex];
+            };
+            
+            var nextBtn = document.createElement('span');
+            nextBtn.innerHTML = '&#10095;';
+            nextBtn.style.cssText = 'position:absolute;right:20px;top:50%;transform:translateY(-50%);color:white;font-size:50px;cursor:pointer;z-index:100001;user-select:none;';
+            nextBtn.onclick = function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                var img = lightbox.querySelector('.lightbox-img');
+                if (img) img.src = currentImages[currentIndex];
+            };
+            
+            var bigPhoto = document.createElement('img');
+            bigPhoto.className = 'lightbox-img';
+            bigPhoto.src = images[index];
+            bigPhoto.style.cssText = 'max-width:85%;max-height:85%;object-fit:contain;';
+            
+            lightbox.onclick = function(e) {
+                if (e.target === lightbox) {
+                    var lb = document.getElementById('myLightbox');
+                    if (lb) document.body.removeChild(lb);
+                }
+            };
+            
+            lightbox.appendChild(closeBtn);
+            lightbox.appendChild(prevBtn);
+            lightbox.appendChild(nextBtn);
+            lightbox.appendChild(bigPhoto);
+            document.body.appendChild(lightbox);
+        }
+
+        document.addEventListener('click', function(e) {
+            if (e.target.classList && e.target.classList.contains('gallery-img')) {
+                e.stopPropagation();
+                if (document.getElementById('myLightbox')) return;
+                
+                var allImages = [];
+                var galleryItems = document.querySelectorAll('#worksGallery .gallery-img');
+                var clickedIndex = 0;
+                
+                galleryItems.forEach(function(img, idx) {
+                    allImages.push(img.src);
+                    if (img === e.target) clickedIndex = idx;
+                });
+                
+                if (allImages.length > 0) {
+                    openLightbox(allImages, clickedIndex);
+                }
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            var lightbox = document.getElementById('myLightbox');
+            if (!lightbox) return;
+            
+            if (e.key === 'ArrowLeft') {
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                var img = lightbox.querySelector('img');
+                img.src = currentImages[currentIndex];
+                e.preventDefault();
+            }
+            
+            if (e.key === 'ArrowRight') {
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                var img = lightbox.querySelector('img');
+                img.src = currentImages[currentIndex];
+                e.preventDefault();
+            }
+            
+            if (e.key === 'Escape') {
+                document.body.removeChild(lightbox);
+            }
+        });
+    </script>
+</body>
+</html>
